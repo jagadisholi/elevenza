@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+
+    <h1>Assignment 1</h1>
+  <h1>Survey Form</h1>
+  <p>Please fill out this survey. Your responses will help us improve our services.</p>
+
+  <form action="#" method="post">
+    
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Preferences -->
+    <fieldset>
+      <legend>Your Preferences</legend>
+
+      <label>Which of the following services do you use? (Select all that apply)</label><br>
+      <input type="checkbox" id="emailService" name="services" value="Email">
+      <label for="emailService">Email</label><br>
+
+      <input type="checkbox" id="cloudStorage" name="services" value="Cloud Storage">
+      <label for="cloudStorage">Cloud Storage</label><br>
+
+      <input type="checkbox" id="fileSharing" name="services" value="File Sharing">
+      <label for="fileSharing">File Sharing</label><br><br>
+
+      <label for="satisfaction">How satisfied are you with our services?</label><br>
+      <input type="radio" id="verySatisfied" name="satisfaction" value="very_satisfied">
+      <label for="verySatisfied">Very Satisfied</label><br>
+
+      <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+      <label for="satisfied">Satisfied</label><br>
+
+      <input type="radio" id="neutral" name="satisfaction" value="neutral">
+      <label for="neutral">Neutral</label><br>
+
+      <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+      <label for="dissatisfied">Dissatisfied</label><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Feedback Section -->
+    <fieldset>
+      <legend>Additional Feedback</legend>
+
+      <label for="comments">Your Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Survey">
+
+  </form>
+
+</body>
+</html>
