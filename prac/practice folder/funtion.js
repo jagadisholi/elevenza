@@ -43,7 +43,34 @@
 
 // const add =(a,b) => a+b;
 // console.log(add(5));
+/* The code snippet is creating an object `obj` with a property `a` set to the value `1`. Then, it adds
+a new property `b` to the `obj` object with a value of `2`. Finally, it logs the `obj` object to the
+console, which will display both properties `a` and `b` with their respective values. */
 
-const obj ={a:1};
-obj.b=2;
-console.log(obj);
+// const obj ={a:1};
+// obj.b=2;
+// console.log(obj);
+
+// const obj = {a:1,b:2};
+// const {a,b} =obj;
+// console.log(a,b);
+
+
+// function greet(name, callback) {
+//     console.log("Hello, " + name);
+//     callback();
+// }
+
+// function sayBye() {
+//     console.log("Goodbye!");
+// }
+
+// greet("Ajay", sayBye);
+console.log("A");
+setTimeout(()=>
+    console.log("B"),0);
+Promise.resolve().then(()=>
+console.log("C"));
+console.log("D");
+
+    
